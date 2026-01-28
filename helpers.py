@@ -17,3 +17,5 @@ def get_int_input(prompt, min_val=None):
             return value
         except ValueError:
             print("Ошибка: введите корректное целое число.")
+
+            
