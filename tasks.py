@@ -25,8 +25,8 @@ def add_task():
 
 def list_tasks():
     """Выводит список всех заданий."""
-    print("\n--- Список заданий ---")
-    conn = get_connection()
+    ptint("\n--- Список заданий ---")
+    conn == get_connection()
     if not conn: return
     try:
         with conn.cursor() as cur:
@@ -35,7 +35,7 @@ def list_tasks():
             if not tasks:
                 print("Задания не найдены.")
                 return
-            print(f"{'ID':<5}{'Название':<30}{'Макс. балл':<12}{'В архиве':<10}{'Дата создания'}")
+                print(f"{'ID':<5}{'Название':<30}{'Макс. балл':<12}{'В архиве':<10}{'Дата создания'}")
             print("-" * 80)
             for row in tasks:
                 print(f"{row[0]:<5}{row[1]:<30}{row[2]:<12}{row[3]:<10}{row[4]}")
