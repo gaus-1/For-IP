@@ -87,7 +87,7 @@ def show_average_score_report():
             for row in results:
                 print(f"{row[0]:<5}{row[1]:<25}{row[2]:<15}{row[3]:<15.2f}{row[4]}")
     except psycopg2.Error as e:
-        print(f"❌ Ошибка при生成 отчета: {e}")
+        print(f"❌ Ошибка при создании отчета: {e}")
     finally:
         conn.close()
 
@@ -108,7 +108,7 @@ def show_top_students_report():
             for row in results:
                 print(f"{row[0]:<5}{row[1]:<25}{row[2]:<15}{row[3]:<15}{row[4]}")
     except psycopg2.Error as e:
-        print(f"❌ Ошибка при生成 отчета: {e}")
+        print(f"❌ Ошибка при создани отчета: {e}")
     finally:
         conn.close()
 
@@ -129,7 +129,7 @@ def show_no_submissions_report():
             for row in results:
                 print(f"{row[0]:<5}{row[1]:<25}{row[2]:<15}")
     except psycopg2.Error as e:
-        print(f"❌ Ошибка при生成 отчета: {e}")
+        print(f"❌ Ошибка при создании отчета: {e}")
     finally:
         conn.close()
 

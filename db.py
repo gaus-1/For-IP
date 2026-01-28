@@ -2,8 +2,8 @@ import psycopg2
 
 DB_CONFIG = {
     'dbname': 'uchet_db',
-    'user': 'postgres',     
-    'password': '223344',  
+    'user': 'postgres',
+    'password': '223344',
     'host': 'localhost',
     'port': '5432'
 }
